@@ -1,0 +1,219 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--slate);
+  background-color: var(--white);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--navy-blue);
+}
+
+a:hover,
+a:focus {
+  color: var(--ocean);
+}
+
+button {
+  cursor: pointer;
+  background: var(--iris);
+}
+
+button:hover,
+button:focus {
+  background: var(--ocean);
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+
+  /* line-height: 40px; */
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
+.section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+
+  /* line-height: 24px; */
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.section-text {
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  /* line-height: 21px; */
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+.logo-span {
+  color: var(--navy-blue);
+}
+
+.logo-span-footer {
+  color: var(--cloud);
+}
+
+/* !HEADER */
+.header {
+}
+
+.header-logo {
+}
+
+.header-list {
+  font-weight: 500;
+  /* line-height: 24px; */
+  letter-spacing: 0.02em;
+}
+.header-list-item {
+}
+.header-list-item-link {
+}
+.adress {
+}
+
+.adress-list {
+}
+.adress-list-item {
+}
+.adress-list-item-link {
+  color: var(--slate);
+}
+
+/* !Section About */
+.about {
+  background: var(--navy-blue);
+}
+.about-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  /* line-height: 60px; */
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--white);
+}
+.about-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background: var(--iris);
+}
+
+/* !Section Benefits */
+.benefits {
+}
+.benefits-title {
+}
+.benefits-list {
+}
+.benefits-list-item {
+}
+.benefits-list-item-title {
+}
+.benefits-list-item-text {
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+/* !Section Team */
+.team {
+  background: var(--cloud);
+}
+.team-title {
+}
+.team-list {
+}
+.team-list-item {
+  color: var(--slate);
+  background: var(--white);
+}
+.team-list-item-img {
+}
+.team-list-item-subtitle {
+}
+.team-list-item-text {
+}
+
+/* !Section Portfolio */
+.portfolio {
+}
+.portfolio-title {
+}
+.portfolio-list {
+}
+.portfolio-list-item {
+}
+.portfolio-list-item-img {
+}
+.portfolio-list-item-subtitle {
+}
+.portfolio-list-item-text {
+  color: var(--slate);
+}
+
+/* !Footer */
+.footer {
+  background: var(--navy-blue);
+}
+.footer-logo {
+}
+.footer-desc {
+  color: var(--cloud);
+}
