@@ -13,6 +13,7 @@
   --dairy: #fcfcfc;
 }
 
+/* !General styles */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -23,8 +24,23 @@ body {
   letter-spacing: 0.02em;
 }
 
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 ul,
 ol {
+  margin: 0;
+  padding-left: 0;
   list-style-type: none;
 }
 
@@ -53,7 +69,15 @@ address {
   font-style: normal;
 }
 
+section {
+  /* width: 100vw; */
+}
+
 .container {
+  max-width: 1128px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -78,9 +102,6 @@ address {
   color: #2e2f42;
 }
 
-.section-text {
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -101,37 +122,62 @@ address {
 }
 
 /* !HEADER */
-.header {
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
+  display: block;
+  padding: 24px 0;
 }
 
+.nav {
+  display: flex;
+  gap: 76px;
+}
 .header-list {
+  gap: 40px;
   font-weight: 500;
   /* line-height: 24px; */
   letter-spacing: 0.02em;
-}
-.header-list-item {
-}
-.header-list-item-link {
-}
-.adress {
+  display: flex;
 }
 
-.adress-list {
+.header-list-item-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-.adress-list-item {
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
-.adress-list-item-link {
+
+.address-list-item-link {
   color: var(--slate);
 }
 
 /* !Section About */
 .about {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   background: var(--navy-blue);
+  margin-bottom: 120px;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
 }
 .about-title {
+  max-width: 496px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 56px;
@@ -142,26 +188,46 @@ address {
   color: var(--white);
 }
 .about-btn {
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: var(--iris);
+  border-radius: 4px;
+  padding: 16px 32px;
+  white-space: nowrap;
+}
+
+.about .container {
+  padding: 188px 0;
 }
 
 /* !Section Benefits */
 .benefits {
+  margin-bottom: 120px;
 }
 .benefits-title {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 .benefits-list {
+  display: flex;
+  gap: 24px;
 }
-.benefits-list-item {
-}
-.benefits-list-item-title {
-}
+
 .benefits-list-item-text {
   font-weight: 400;
   font-size: 16px;
@@ -174,36 +240,75 @@ address {
 
 /* !Section Team */
 .team {
+  margin-top: 120px;
+
   background: var(--cloud);
+  overflow: auto;
+}
+
+.team .container {
+  margin-top: 120px;
+}
+
+.team-text-wrapper {
+  margin: 32px 0;
+  text-align: center;
 }
 .team-title {
+  margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-list-item {
+  border-radius: 0 0 4px 4px;
   color: var(--slate);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
+  margin-bottom: 120px;
 }
-.team-list-item-img {
-}
+
 .team-list-item-subtitle {
-}
-.team-list-item-text {
+  padding-bottom: 8px;
 }
 
 /* !Section Portfolio */
 .portfolio {
+  margin: 120px 0;
 }
+
 .portfolio-title {
+  margin: 72px;
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 8px;
 }
 .portfolio-list-item {
+  flex: 1 1 calc(33.333% - 8px);
+  max-width: calc(33.333% - 8px);
 }
 .portfolio-list-item-img {
+  display: block;
 }
-.portfolio-list-item-subtitle {
+
+.portfolio-text-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px 8px;
+  border-bottom: 1px solid var(--cornflower);
+  border-left: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
 }
+
 .portfolio-list-item-text {
   color: var(--slate);
 }
@@ -212,8 +317,16 @@ address {
 .footer {
   background: var(--navy-blue);
 }
-.footer-logo {
+
+.footer .container {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17.5px;
 }
+
 .footer-desc {
+  width: 264px;
   color: var(--cloud);
 }
