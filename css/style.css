@@ -107,7 +107,6 @@ section {
 }
 
 .logo {
-  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -119,12 +118,10 @@ section {
 }
 
 .logo-span {
-  display: inline-block;
   color: var(--navy-blue);
 }
 
 .logo-span-footer {
-  display: inline-block;
   color: var(--cloud);
 }
 
@@ -324,7 +321,7 @@ section {
 /* !Footer */
 .footer {
   background: var(--navy-blue);
-  padding: 100px 0ж;
+  padding: 100px 0;
   padding: 100px 0;
 }
 
@@ -337,6 +334,10 @@ section {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.footer a {
+  display: inline-block;
 }
 
 .footer-desc {
