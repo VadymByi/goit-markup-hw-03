@@ -344,10 +344,6 @@ section {
   color: var(--iris);
 }
 
-.footer a {
-  display: inline-block;
-}
-
 .footer-desc {
   width: 264px;
   color: var(--cloud);
