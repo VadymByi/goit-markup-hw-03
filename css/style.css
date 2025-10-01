@@ -331,14 +331,11 @@ section {
 }
 
 .footer-logo {
+  display: inline-block;
   margin-bottom: 16px;
 }
 
 .footer-desc {
   width: 264px;
   color: var(--cloud);
-}
-
-footer a.footer-logo {
-  display: inline-block;
 }
